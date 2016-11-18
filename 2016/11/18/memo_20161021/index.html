@@ -7,13 +7,39 @@
 
     
 
-    <title>Java | XsYang&#39;s blog.</title>
+    <title>随记docker | XsYang&#39;s blog.</title>
     <meta name="author" content="kidxueying">
+    
+    <meta name="description" content="集群系统：
+[shipyard]
+
+
+web图形化docker集群管理
+基于Docker Swarm
+Java
+
+
+[kubernetes]
+
+
+Google开源的docker集群管理系统
+go
+
+
+[CoreOS]
+
+[Mesos]
+
+[Docker Swarm]
+
+
+
+原作: 2016-10-2">
     
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    
+    <meta property="og:title" content="随记docker"/>
     <meta property="og:site_name" content="XsYang&#39;s blog."/>
 
     
@@ -161,32 +187,8 @@
         
 
             <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/ProjectManage/">
-                    ProjectManage <span class="right">1 篇</span></a>
-                </a>
-            </li>
-
-        
-
-            <li class="collapse-level-0" collapse-level="0">
                 <a class="no-padding" href="/categories/memo/">
-                    memo <span class="right">4 篇</span></a>
-                </a>
-            </li>
-
-        
-
-            <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/Language/">
-                    Language <span class="right">1 篇</span></a>
-                </a>
-            </li>
-
-        
-
-            <li class="collapse-level-1" collapse-level="1">
-                <a class="no-padding" href="/categories/Language/Java/">
-                    Java <span class="right">1 篇</span></a>
+                    memo <span class="right">7 篇</span></a>
                 </a>
             </li>
 
@@ -215,30 +217,128 @@
 
     <main>
         <div class="container main-container">
-    
-
-<nav class="page-nav hide-on-small-only">
+    <nav class="page-nav hide-on-small-only">
     <div class="nav-wrapper indigo">
         <span class="breadcrumb">当前位置（分类目录）</span>
         
+            
+    
+    
+    <a class="breadcrumb" href="/categories/memo/">memo</a>
+
 
         
-            <a class="breadcrumb" href="/categories/Language/Java/">Java</a>
+
         
     </div>
 </nav>
 
+<article>
+    <div class="card">
+        <div class="card-content">
+            
+
+            <div class="article-title">
+                
+    
+        <h1>随记docker</h1>
+    
 
 
-    <div class="collection mt-0">
+            </div>
+            <time class="pink-link-context" datetime="2016-11-17T16:00:00.000Z"><a href="/2016/11/18/memo_20161021/">2016-11-18</a></time>
+
+            
+    <div class="tags-row">
         
-            <a href="/2016/10/19/test/" class="collection-item grey-text text-darken-1">
-                <time datetime="2016-10-19T08:27:11.366Z">2016-10-19</time>
-                <span>&nbsp;&nbsp;&nbsp;</span>
-                test
-            </a>
+            <a href="/tags/memo/" class="chip pink lighten-1">memo</a>
         
     </div>
+
+
+            <div class="toc pink-link-context hide-on-med-and-down">
+    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#集群系统："><span class="section table-of-contents-text">集群系统：</span></a></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#docker相关随记，待整理"><span class="section table-of-contents-text">docker相关随记，待整理</span></a></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#问题"><span class="section table-of-contents-text">问题</span></a></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#备注"><span class="section table-of-contents-text">备注</span></a></li></ol>
+</div>
+
+
+            <div class="entry pink-link-context">
+                <hr>
+<h1 id="集群系统："><a href="#集群系统：" class="headerlink" title="集群系统："></a>集群系统：</h1><ol>
+<li>[shipyard]</li>
+</ol>
+<ul>
+<li>web图形化docker集群管理</li>
+<li>基于Docker Swarm</li>
+<li>Java</li>
+</ul>
+<ol>
+<li>[kubernetes]</li>
+</ol>
+<ul>
+<li>Google开源的docker集群管理系统</li>
+<li>go</li>
+</ul>
+<ol>
+<li><p>[CoreOS]</p>
+</li>
+<li><p>[Mesos]</p>
+</li>
+<li><p>[Docker Swarm]</p>
+</li>
+</ol>
+<hr>
+<p>原作: 2016-10-21</p>
+<hr>
+<h1 id="docker相关随记，待整理"><a href="#docker相关随记，待整理" class="headerlink" title="docker相关随记，待整理"></a>docker相关随记，待整理</h1><ul>
+<li>docker 现在有windows支持，支持winserver2016</li>
+<li>windows container需要hyper-v支持</li>
+<li>目前来看windowns cotainer不能运行在linux宿主机上</li>
+<li>linux宿主机可以通过virtual box来运行windows环境</li>
+<li>docker cli可以指定windows或linux宿主机来运行task，目前为beta feature</li>
+</ul>
+<hr>
+<h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><ol>
+<li>以上feature需要核实</li>
+</ol>
+<hr>
+<h1 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h1><p><a href="https://docs.docker.com/docker-for-windowss" target="_blank" rel="external">docker-for-windows文档</a><br><a href="https://msdn.microsoft.com/en-us/virtualization/windowscontainers/about/about_overview" target="_blank" rel="external">windows cotainers文档</a></p>
+<p><a href="https://github.com/shipyard/shipyard" target="_blank" rel="external">shipyard</a><br><a href="https://github.com/kubernetes/kubernetes" target="_blank" rel="external">kubernetes</a><br><a href="https://coreos.com" target="_blank" rel="external">CoreOS</a><br><a href="http://mesos.apache.org/" target="_blank" rel="external">Mesos</a><br><a href="http://mesos.apache.org/" target="_blank" rel="external">Yarn</a><br><a href="https://docs.docker.com/engine/swarm" target="_blank" rel="external">Docker Swarm</a></p>
+
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+    <section id="comment">
+        <div class="card">
+            <div class="card-content">
+                <!-- Duoshuo Comment BEGIN -->
+                <div class="ds-thread" data-thread-key="2016/11/18/memo_20161021/" data-title="随记docker" data-url="http://kidxueying.github.io/2016/11/18/memo_20161021/"></div>
+
+                <script type="text/javascript">
+                    console.log(document.querySelector('.ds-thread'));
+                    var duoshuoQuery = {
+                        short_name: 'kidxueying'
+                    };
+                    (function() {
+                        var ds = document.createElement('script');
+                        ds.type = 'text/javascript';
+                        ds.async = true;
+                        ds.src = (document.location.protocol == 'https:'
+                            ? 'https:'
+                            : 'http:') + '//static.duoshuo.com/embed.js';
+                        ds.charset = 'UTF-8';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+                    })();
+                </script>
+                <!-- Duoshuo Comment END -->
+            </div>
+        </div>
+    </section>
+
 
 
 </div>

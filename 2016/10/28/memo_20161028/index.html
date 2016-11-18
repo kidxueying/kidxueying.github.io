@@ -7,18 +7,19 @@
 
     
 
-    <title>随记project manage | XsYang&#39;s blog.</title>
+    <title>随记,大数据 | XsYang&#39;s blog.</title>
     <meta name="author" content="kidxueying">
     
-    <meta name="description" content="项目管理工具相关记录，待整理gitlab vs gitolite
-之前在ubuntu上配置并测试了gitolite，提供git仓库的管理功能，主要是权限
-gitlab初步了解是类似github的开源项目，提供基于web的git仓库管理功能
-gitlab在v5.0发布时废弃了gitolite，之前版本">
+    <meta name="description" content="大数据相关记录背景CAP等
+数据仓库：Hadoop、HDFS、Spark、Hive
+HDFS为分布式文件系统，有中心节点，与Hadoop其他组件如MapReduce、HBase等结合较好
+Tez、Spark将MapReduce升级，使其更通用，增加了很多特性
+Pig和Hive，Pig是近脚本的方式描">
     
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <meta property="og:title" content="随记project manage"/>
+    <meta property="og:title" content="随记,大数据"/>
     <meta property="og:site_name" content="XsYang&#39;s blog."/>
 
     
@@ -166,32 +167,8 @@ gitlab在v5.0发布时废弃了gitolite，之前版本">
         
 
             <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/ProjectManage/">
-                    ProjectManage <span class="right">1 篇</span></a>
-                </a>
-            </li>
-
-        
-
-            <li class="collapse-level-0" collapse-level="0">
                 <a class="no-padding" href="/categories/memo/">
-                    memo <span class="right">4 篇</span></a>
-                </a>
-            </li>
-
-        
-
-            <li class="collapse-level-0" collapse-level="0">
-                <a class="no-padding" href="/categories/Language/">
-                    Language <span class="right">1 篇</span></a>
-                </a>
-            </li>
-
-        
-
-            <li class="collapse-level-1" collapse-level="1">
-                <a class="no-padding" href="/categories/Language/Java/">
-                    Java <span class="right">1 篇</span></a>
+                    memo <span class="right">7 篇</span></a>
                 </a>
             </li>
 
@@ -244,12 +221,12 @@ gitlab在v5.0发布时废弃了gitolite，之前版本">
             <div class="article-title">
                 
     
-        <h1>随记project manage</h1>
+        <h1>随记,大数据</h1>
     
 
 
             </div>
-            <time class="pink-link-context" datetime="2016-10-20T16:00:00.000Z"><a href="/2016/10/21/memo_20161021_2/">2016-10-21</a></time>
+            <time class="pink-link-context" datetime="2016-10-27T16:00:00.000Z"><a href="/2016/10/28/memo_20161028/">2016-10-28</a></time>
 
             
     <div class="tags-row">
@@ -260,26 +237,31 @@ gitlab在v5.0发布时废弃了gitolite，之前版本">
 
 
             <div class="toc pink-link-context hide-on-med-and-down">
-    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#项目管理工具相关记录，待整理"><span class="section table-of-contents-text">项目管理工具相关记录，待整理</span></a></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#gitlab-vs-gitolite"><span class="section table-of-contents-text">gitlab vs gitolite</span></a></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#Python-twisterd-dulwich"><span class="section table-of-contents-text">Python twisterd/dulwich</span></a></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#问题"><span class="section table-of-contents-text">问题</span></a></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#备注"><span class="section table-of-contents-text">备注</span></a></li></ol>
+    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#大数据相关记录"><span class="section table-of-contents-text">大数据相关记录</span></a></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#背景"><span class="section table-of-contents-text">背景</span></a></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#数据仓库：Hadoop、HDFS、Spark、Hive"><span class="section table-of-contents-text">数据仓库：Hadoop、HDFS、Spark、Hive</span></a></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#流式计算：Storm"><span class="section table-of-contents-text">流式计算：Storm</span></a></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#NoSQL：-Cassandra、HBase、MongoDB、Redis、Neo4j"><span class="section table-of-contents-text">NoSQL： Cassandra、HBase、MongoDB、Redis、Neo4j</span></a></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#其他：Mahout、ProtoBuf、Yarn、ZooKeeper"><span class="section table-of-contents-text">其他：Mahout、ProtoBuf、Yarn、ZooKeeper</span></a></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#问题"><span class="section table-of-contents-text">问题</span></a></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#备注"><span class="section table-of-contents-text">备注</span></a></li></ol>
 </div>
 
 
             <div class="entry pink-link-context">
                 <hr>
-<h1 id="项目管理工具相关记录，待整理"><a href="#项目管理工具相关记录，待整理" class="headerlink" title="项目管理工具相关记录，待整理"></a>项目管理工具相关记录，待整理</h1><h1 id="gitlab-vs-gitolite"><a href="#gitlab-vs-gitolite" class="headerlink" title="gitlab vs gitolite"></a>gitlab vs gitolite</h1><ul>
-<li>之前在ubuntu上配置并测试了gitolite，提供git仓库的管理功能，主要是权限</li>
-<li>gitlab初步了解是类似github的开源项目，提供基于web的git仓库管理功能</li>
-<li>gitlab在v5.0发布时废弃了gitolite，之前版本由gitolite支持</li>
-<li>后续部署并测试gitlab与redmine集成，以及与jenkins集成</li>
-<li>基于Ruby，存在安全机制的缺陷</li>
+<h1 id="大数据相关记录"><a href="#大数据相关记录" class="headerlink" title="大数据相关记录"></a>大数据相关记录</h1><h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>CAP等</p>
+<h1 id="数据仓库：Hadoop、HDFS、Spark、Hive"><a href="#数据仓库：Hadoop、HDFS、Spark、Hive" class="headerlink" title="数据仓库：Hadoop、HDFS、Spark、Hive"></a>数据仓库：Hadoop、HDFS、Spark、Hive</h1><ul>
+<li>HDFS为分布式文件系统，有中心节点，与Hadoop其他组件如MapReduce、HBase等结合较好</li>
+<li>Tez、Spark将MapReduce升级，使其更通用，增加了很多特性</li>
+<li>Pig和Hive，Pig是近脚本的方式描述MapReduce，而Hive是用SQL</li>
+<li>Hive on Tez/Spark和SparkSQL，为Hive在MapReduce上的升级版<br>以上为数据仓储的基本架构：底层HDFS，上面跑MapReduce/Tez/Spark，再上面跑Hive、Pig; 或者HDFS上面直接跑Impala/Drill/Presto(这几个都是SQL交互引擎)</li>
 </ul>
-<h1 id="Python-twisterd-dulwich"><a href="#Python-twisterd-dulwich" class="headerlink" title="Python twisterd/dulwich"></a>Python twisterd/dulwich</h1><ul>
-<li>Twisterd是一套python的网络库，基于事件机制</li>
-<li>dulwich是python实现的git接口</li>
+<h1 id="流式计算：Storm"><a href="#流式计算：Storm" class="headerlink" title="流式计算：Storm"></a>流式计算：Storm</h1><ul>
+<li>实时性较高，适用于增量数据处理和已知的模型计算</li>
+<li>流式计算与批处理系统有区别，批处理系统适用与数据仓储后的操作、分析，及存量数据</li>
+<li>应用场景和数据仓储不太一样</li>
+</ul>
+<h1 id="NoSQL：-Cassandra、HBase、MongoDB、Redis、Neo4j"><a href="#NoSQL：-Cassandra、HBase、MongoDB、Redis、Neo4j" class="headerlink" title="NoSQL： Cassandra、HBase、MongoDB、Redis、Neo4j"></a>NoSQL： Cassandra、HBase、MongoDB、Redis、Neo4j</h1><h1 id="其他：Mahout、ProtoBuf、Yarn、ZooKeeper"><a href="#其他：Mahout、ProtoBuf、Yarn、ZooKeeper" class="headerlink" title="其他：Mahout、ProtoBuf、Yarn、ZooKeeper"></a>其他：Mahout、ProtoBuf、Yarn、ZooKeeper</h1><hr>
+<h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><ul>
+<li>NoSQL与数据仓储的应用场景对比</li>
+<li>如何组合</li>
 </ul>
 <hr>
-<h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><hr>
-<h1 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h1><p><a href="http://blog.csdn.net/hanhuili/article/details/9389433" target="_blank" rel="external">Twisterd介绍</a><br><a href="https://github.com/jelmer/dulwich" target="_blank" rel="external">dulwich</a></p>
+<h1 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h1><p><a href="https://www.zhihu.com/question/27974418/answer/38965760" target="_blank" rel="external">hadoop等简介</a><br><a href="https://kkovacs.eu/cassandra-vs-mongodb-vs-couchdb-vs-redis" target="_blank" rel="external">NoSQL对比</a><br><a href="https://zhuanlan.zhihu.com/p/19962491" target="_blank" rel="external">后hadoop时代的大数据</a></p>
 
             </div>
         </div>
@@ -293,7 +275,7 @@ gitlab在v5.0发布时废弃了gitolite，之前版本">
         <div class="card">
             <div class="card-content">
                 <!-- Duoshuo Comment BEGIN -->
-                <div class="ds-thread" data-thread-key="2016/10/21/memo_20161021_2/" data-title="随记project manage" data-url="http://kidxueying.github.io/2016/10/21/memo_20161021_2/"></div>
+                <div class="ds-thread" data-thread-key="2016/10/28/memo_20161028/" data-title="随记,大数据" data-url="http://kidxueying.github.io/2016/10/28/memo_20161028/"></div>
 
                 <script type="text/javascript">
                     console.log(document.querySelector('.ds-thread'));
